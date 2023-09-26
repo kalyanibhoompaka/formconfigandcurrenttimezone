@@ -1,0 +1,17 @@
+book_enquiry.config_form:
+  path: '/admin/config/book_enquiry'
+  defaults:
+    _title: 'Book Enquiry Configuration Form'
+    _form: '\Drupal\book_enquiry\Form\BookEnquiryConfigForm'
+  requirements: 
+    _permission: 'access content'
+  options:  
+    _admin_route: TRUE
+
+book_enquiry.form:
+  path: '/book_enquiry'
+  defaults:
+    _title: 'Enquiry Form'
+    _form: '\Drupal\book_enquiry\Form\BookEnquiryForm'
+  requirements: 
+    _permission: 'access content'

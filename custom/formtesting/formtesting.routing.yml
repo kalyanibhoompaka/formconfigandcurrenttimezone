@@ -1,0 +1,29 @@
+formtesting.form:
+  path: '/formtesting'
+  defaults:
+    _title: 'Testing Form'
+    _form: '\Drupal\formtesting\Form\FormTestingForm'
+  requirements: 
+    _permission: 'access content'
+
+formtesting.view_data:
+  path: '/view_data'
+  defaults:
+    _controller: '\Drupal\formtesting\Controller\FormTestingController::view_data'
+  requirements: 
+    _permission: 'access content'
+
+formtesting.edit_data:
+  path: '/edit_data/{id}'
+  defaults:
+    _title: 'Edit Testing Form'
+    _form: '\Drupal\formtesting\Form\EditTestingForm'
+  requirements: 
+    _permission: 'access content'  
+
+formtesting.delete_data:
+  path: '/delete_data/{id}'
+  defaults:
+    _controller: '\Drupal\formtesting\Controller\FormTestingController::delete_data'
+  requirements: 
+    _permission: 'access content'      

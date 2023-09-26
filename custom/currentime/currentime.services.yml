@@ -1,0 +1,4 @@
+services:
+  currentime.CurretTime:
+    class: Drupal\currentime\services\CurrentTime
+    arguments: ['@config.factory']        

@@ -1,0 +1,58 @@
+<?php
+function student_registration_schema() {
+  $schema['student_registration'] = array(
+    'fields' => array(
+      'id'=>array(
+        'type'=>'serial',
+        'not null' => TRUE,
+      ),
+      'student_name'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'student_rollno'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'student_mail'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+        ),
+      'student_phone'=>array(
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+      'student_dob'=>array(
+        'type' => 'varchar',
+        'length' => 40,
+        'not null' => TRUE,
+      ),
+      'student_gender'=>array(
+        'type' => 'varchar',
+        'length' => 25,
+        'not null' => TRUE,
+      ),
+      'crust_size'=>array(
+        'type' => 'varchar',
+        'length' => 55,
+        'not null' => TRUE,
+      ),
+      'items_selected'=>array(
+        'type' => 'varchar',
+        'length' => 55,
+        'not null' => TRUE,
+      ),
+      'life_story'=>array(
+        'type' => 'varchar',
+        'length' => 55,
+        'not null' => TRUE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

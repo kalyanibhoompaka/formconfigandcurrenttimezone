@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function student_registration_theme($existing, $type, $theme, $path)
+ {
+  return [
+'event_templ' => [
+      'render element' => 'form',
+    ],
+  ];
+}

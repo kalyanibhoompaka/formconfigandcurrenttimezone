@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function formtesting_theme($existing, $type, $theme, $path)
+ {
+  return [
+'event_templ' => [
+      'render element' => 'form',
+    ],
+
+ 
+  ];
+}

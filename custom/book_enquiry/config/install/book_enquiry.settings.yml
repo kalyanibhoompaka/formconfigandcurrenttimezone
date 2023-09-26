@@ -1,0 +1,9 @@
+# Contains the default values on install and can be
+# overridden in our config settings form, accessible
+# on route `<yoursite.com>/book_enquiry/config_settings`
+
+Country: 'Enter Country:'
+State: 'Enter State:'
+City: 'Enter your E-mail id:'
+Timezone: 'Enter your Timezone:'
+Pincode: 'Enter your  Pincode:'
